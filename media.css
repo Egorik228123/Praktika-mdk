@@ -1,3 +1,15 @@
+@media screen and (min-width: 1580px) {
+    .library_section article {
+        justify-content: center;
+        width: 100%;
+    }
+    .slider {
+        cursor: auto;
+    }
+    .library_item {
+        user-select: all;
+    }
+}
 @media screen and (max-width: 1320px) {
     section > section,
     header > section,
@@ -6,7 +18,7 @@
     .yellow_background_section,
     .library_section h4 {
         margin: 0 auto;
-        width: 90%;
+        width: 83.33%;
 
     }
     .purple_background_section {

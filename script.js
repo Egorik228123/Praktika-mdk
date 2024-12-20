@@ -19,3 +19,37 @@ window.addEventListener('resize', function() {
 
 // slider
 
+var slider = document.querySelector('.slider')
+let pressed = false
+let startX = 0
+
+slider.addEventListener('mousedown', function (e) {
+  if(window.innerWidth < 1580) {
+    pressed = true
+    startX = e.clientX
+    this.style.cursor = 'grabbing'
+  }
+})
+
+slider.addEventListener('mouseleave', function (e) {
+  if(window.innerWidth < 1580) {
+    pressed = false
+  }
+})
+
+window.addEventListener('mouseup', function (e) {
+  if(window.innerWidth < 1580) {
+  pressed = false
+  slider.style.cursor = 'grab'
+  }
+})
+
+slider.addEventListener('mousemove', function (e) {
+  if(window.innerWidth < 1580) {
+    if(!pressed) {
+      return
+    }
+  
+    this.scrollLeft += startX - e.clientX
+  }
+})

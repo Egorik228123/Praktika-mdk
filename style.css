@@ -375,13 +375,21 @@ form {
 .library_section article {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     gap: 16px;
     margin-bottom: 5px;
-    width: 100%;
+    width: 90%;
 }
-
+.slider {
+    overflow-x: auto;
+    scroll-snap-type: x;
+    cursor: grab;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
 .library_item {
     background: var(--white-color);
     width: 144px;
@@ -390,6 +398,8 @@ form {
     border-radius: 8px;
     text-align: center;
     line-height: 16px;
+    user-select: none;
+    scroll-snap-align: start;
     h5 {
         width: 98px;
     }
