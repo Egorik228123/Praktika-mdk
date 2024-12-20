@@ -29,6 +29,9 @@ slider.addEventListener('mousedown', function (e) {
     startX = e.clientX
     this.style.cursor = 'grabbing'
   }
+  else {
+    this.style.cursor = 'auto'
+  }
 })
 
 slider.addEventListener('mouseleave', function (e) {
@@ -39,8 +42,8 @@ slider.addEventListener('mouseleave', function (e) {
 
 window.addEventListener('mouseup', function (e) {
   if(window.innerWidth < 1580) {
-  pressed = false
-  slider.style.cursor = 'grab'
+    pressed = false
+    slider.style.cursor = 'grab'
   }
 })
 
@@ -49,7 +52,6 @@ slider.addEventListener('mousemove', function (e) {
     if(!pressed) {
       return
     }
-  
     this.scrollLeft += startX - e.clientX
   }
 })

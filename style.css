@@ -25,7 +25,7 @@ a {
     text-decoration: none;
     color: var(--black-color);
 }
-p,a,div {
+p,a,div,span {
     margin: 0;
     font-family: Inter_Regular;
     letter-spacing: 0.25px;
@@ -383,7 +383,7 @@ form {
 .slider {
     overflow-x: auto;
     scroll-snap-type: x;
-    cursor: grab;
+    cursor: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
 }
