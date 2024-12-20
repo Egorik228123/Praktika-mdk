@@ -1,3 +1,5 @@
+// hamburger
+
 var nav = document.querySelector('nav');
 var menuToggle = document.querySelector('.hamburger');
 var line = document.querySelector('.line')
@@ -14,3 +16,6 @@ window.addEventListener('resize', function() {
     menuToggle.classList.remove('active');
   }
 });
+
+// slider
+

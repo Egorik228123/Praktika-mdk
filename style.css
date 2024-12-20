@@ -368,6 +368,9 @@ form {
     button {
         background: var(--main-color);
     }
+    h4 {
+        text-align: center;
+    }
 }
 .library_section article {
     display: flex;
@@ -376,7 +379,9 @@ form {
     justify-content: center;
     gap: 16px;
     margin-bottom: 5px;
+    width: 100%;
 }
+
 .library_item {
     background: var(--white-color);
     width: 144px;
@@ -619,9 +624,14 @@ form {
     .footer_link2 {
         background-image: url("img/footer_link_button2.png");
     }
+    .media {
+        width: 40px;
+        height: 40px;
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
     .media1 {
         background-image: url("img/social_media/twitter.png");
-        width: 16px;
-        height: 16px;
     }
 }
